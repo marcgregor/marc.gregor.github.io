@@ -20,6 +20,7 @@ Security was a focus in this enhancement. I no longer implemented “using names
 It was clunky and frustrating at first trying to convert the binary search tree into a hash table, but once I was successful in the transition, I was able to add the added features without much issue. I learned that there are a lot more moving pieces in a hash table, and it took more than 150 additional lines of code, but I found it interesting to see the relationship between the two structures and how they’re built. My biggest challenge was trying to successfully set up the key. The key is an integer, and since the course ID was alphanumeric (ABCD123), I had to turn it into an arbitrary integer by using ASCII values of the string.
 
 # Original Artifact
+![image](https://github.com/marcgregor/marcgregor.github.io/assets/120348789/0ac549ad-7021-4460-9248-46852b26b4d6)
 
 # Pseudocode
 
