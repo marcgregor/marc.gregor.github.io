@@ -1,4 +1,4 @@
-# Artifact One - Software Design and Engineering: Slideshow
+# Artifact One - [Software Design and Engineering: Slideshow](https://github.com/marcgregor/marcgregor.github.io/tree/main/Artifact%20One%20-%20Slideshow)
 
 ## Briefly Describe the Artifact. What is it? When was it Created?
 Originally, it was a slideshow created in Java for CS250 back in 23EW3. Using the JFrame framework, the task was to create a slideshow revolving around 5 different destinations to travel. Each of the 5 slides had an image of the destination, as well as a blurb of information. 
@@ -15,3 +15,5 @@ These comments also provide a line of communication between the reader and devel
 I was able to use my innovated skills and techniques to implement the solution of porting to a different language. I was able to prevent errors, such as out of scope values in lists, and I was able to follow the SDLC in order to produce this slideshow in a realistic schedule. I followed all standard conventions for Python (including naming conventions such as naming variables lowercase_underscore_lowercase). I declared string variables ahead of time, so I could reuse them in multiple situations, preventing the constant problem of reusing code, and I kept all related code blocks together. I used iterative testing by gradually making small changes to the program based on feedback (from both the enhancement plan and the initial enhancement), such as adding in additional comments about the purpose of the project and cleaning up the slideshow – I fixed any typos I found, as well as changing the hyperlink to make it more in-line with the rest of the slideshow.
 ## Reflect on the Process of Enhancing and/or Modifying the Artifact. What did you Learn as you were Creating it and Improving it? What Challenges did you Face?
 Overall, it was an enjoyable experience. I’ve worked with multiple languages at once, but I’ve never directly ported a program from one language to another, so it was interesting to see close up how even though the syntax may change, overall, languages follow the same underlying concept. My biggest challenge was implementing the slide show. In Java, I used the JFrame frameworks to create the slideshow UI, so I had to do some research on the best route to go in order to implement a slideshow in Python.
+
+# Original Artifact
