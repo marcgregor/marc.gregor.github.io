@@ -1,4 +1,4 @@
-# Artifact One - [Software Design and Engineering: Slideshow](https://github.com/marcgregor/marcgregor.github.io/tree/main/Artifact%20One%20-%20Slideshow)
+# Artifact One - Software Design and Engineering: Slideshow
 [Link to the original and enhanced artifact](https://github.com/marcgregor/marcgregor.github.io/tree/main/Artifact%20One%20-%20Slideshow)
 
 ## Briefly Describe the Artifact. What is it? When was it Created?
@@ -18,3 +18,4 @@ I was able to use my innovated skills and techniques to implement the solution o
 Overall, it was an enjoyable experience. I’ve worked with multiple languages at once, but I’ve never directly ported a program from one language to another, so it was interesting to see close up how even though the syntax may change, overall, languages follow the same underlying concept. My biggest challenge was implementing the slide show. In Java, I used the JFrame frameworks to create the slideshow UI, so I had to do some research on the best route to go in order to implement a slideshow in Python.
 
 # Original Artifact
+<img width="590" alt="javaslideshow" src="https://github.com/marcgregor/marcgregor.github.io/assets/120348789/7730ef26-bb8a-4457-8890-ec40055edb51">
