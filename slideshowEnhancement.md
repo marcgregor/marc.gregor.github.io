@@ -46,3 +46,69 @@ placeholderFive = ImageTk.PhotoImage(Image.open(“placeholder5.png”))
 <img width="601" alt="pythonslideshow" src="https://github.com/marcgregor/marcgregor.github.io/assets/120348789/88f463e0-d1e7-4713-968d-961fad8772d9">
 
 The enhanced slideshow created in Python. Presentation is much neater, with much easier to read text. The pic is now centered, with a white border, and there is now a link to the destination included.
+
+```python
+
+# Adjusts the slideshow's window
+slideshow = tk.Tk()
+slideshow.title("The Top Destinations for Wellness and to Detox")
+slideshow.geometry("800x600")
+# Locks window size
+slideshow.resizable(False, False)
+
+# Loads each of the 5 destination images and resizes them to equal size
+koh_image = ImageTk.PhotoImage(Image.open("KohSamui.jpg").resize((640, 427)))
+new_zealand_image = ImageTk.PhotoImage(Image.open("Glenorchy.jpg").resize((640, 427)))
+portugal_image = ImageTk.PhotoImage(Image.open("DouroValley.jpg").resize((640, 427)))
+indonesia_image = ImageTk.PhotoImage(Image.open("Bali.jpg").resize((640, 427)))
+phuket_image = ImageTk.PhotoImage(Image.open("Phuket.jpg").resize((640, 427)))
+
+# Adds the images into a list
+image_list = [koh_image, new_zealand_image, portugal_image, indonesia_image, phuket_image]
+
+```
+Here, this code set up the initialization of the tkinter window, such as the title and size. Then, 5 images were loaded in and set to their corresponding variables, and finally added to an image list.
+```python
+
+# Moves slideshow backward by clicking on "previous" button
+def move_backward():
+    global counter
+    # Everytime move_backward is called, counter decreases by one
+    if counter < len(image_list):
+        counter -= 1
+        # If counter attempts to go below zero, it resets to the highest counter/slide. Also prevents out of scope
+        # issues
+        if counter < 0:
+            counter = 4
+    else:
+        counter = 0
+    # Counter keeps track of what slide the show is on, and sets the text, image and link label
+    # based on the correct slide
+    if counter == 0:
+        info_label.config(text=koh)
+        image_label.config(image=image_list[counter])
+        link_label.config(text=koh_link)
+        link_label.bind("<Button-1>", lambda e: callback(koh_link))
+    if counter == 1:
+        info_label.config(text=new_zealand)
+        image_label.config(image=image_list[counter])
+        link_label.config(text=new_zealand_link)
+        link_label.bind("<Button-1>", lambda e: callback(new_zealand_link))
+    if counter == 2:
+        info_label.config(text=portugal)
+        image_label.config(image=image_list[counter])
+        link_label.config(text=portugal_link)
+        link_label.bind("<Button-1>", lambda e: callback(portugal_link))
+    if counter == 3:
+        info_label.config(text=indonesia)
+        image_label.config(image=image_list[counter])
+        link_label.config(text=indonesia_link)
+        link_label.bind("<Button-1>", lambda e: callback(indonesia_link))
+    if counter == 4:
+        info_label.config(text=phuket)
+        image_label.config(image=image_list[counter])
+        link_label.config(text=phuket_link)
+        link_label.bind("<Button-1>", lambda e: callback(phuket_link))
+
+```
+This function is called when the Previous button is clicked on, which keeps track of the slide its currently on by a counter. Every click will decrease the value of the counter by one, and if it attempts to go below zero, it resets back to the highest counter value possible (the 5th slide in the show). Otherwise, an if statement will execute based on the counter value, which will then set the correct image and description.
