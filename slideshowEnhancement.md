@@ -1,4 +1,5 @@
 # Artifact One - [Software Design and Engineering: Slideshow](https://github.com/marcgregor/marcgregor.github.io/tree/main/Artifact%20One%20-%20Slideshow)
+[Link to the original and enhanced artifact](https://github.com/marcgregor/marcgregor.github.io/tree/main/Artifact%20One%20-%20Slideshow)
 
 ## Briefly Describe the Artifact. What is it? When was it Created?
 Originally, it was a slideshow created in Java for CS250 back in 23EW3. Using the JFrame framework, the task was to create a slideshow revolving around 5 different destinations to travel. Each of the 5 slides had an image of the destination, as well as a blurb of information. 
