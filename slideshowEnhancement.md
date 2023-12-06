@@ -19,3 +19,8 @@ Overall, it was an enjoyable experience. I’ve worked with multiple languages a
 
 # Original Artifact
 <img width="590" alt="javaslideshow" src="https://github.com/marcgregor/marcgregor.github.io/assets/120348789/7730ef26-bb8a-4457-8890-ec40055edb51">
+The original slideshow created in Java. It was a rough slideshow, with text that was difficult to see with the background color, the images were stretched and pixelated, and the overall presentation was lacking.
+
+# Enhanced Artifact
+<img width="601" alt="pythonslideshow" src="https://github.com/marcgregor/marcgregor.github.io/assets/120348789/88f463e0-d1e7-4713-968d-961fad8772d9">
+The enhanced slideshow created in Python. Presentation is much neater, with much easier to read text. The pic is now centered, with a white border, and there is now a link to the destination included.
