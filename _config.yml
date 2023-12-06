@@ -1,8 +1,8 @@
 theme: jekyll-theme-minimal
 title: Marc Gregor's Culmination of the SNHU Computer Science Program
 
-[Home/Self-Assessment](README.md)
-[Code Review](codeReview.md)
-[Artifact One - Slide Show](slideshowEnhancement.md)
-[Artifact Two - Hash Table](hashTableEnhancement.md)
-[Artifact Three - Database](databaseEnhancement.md)
+description: [Home/Self-Assessment](README.md)
+description: [Code Review](codeReview.md)
+description: [Artifact One - Slide Show](slideshowEnhancement.md)
+description: [Artifact Two - Hash Table](hashTableEnhancement.md)
+description: [Artifact Three - Database](databaseEnhancement.md)
