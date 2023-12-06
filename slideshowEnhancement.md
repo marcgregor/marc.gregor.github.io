@@ -22,6 +22,26 @@ Overall, it was an enjoyable experience. I’ve worked with multiple languages a
 
 The original slideshow created in Java. It was a rough slideshow, with text that was difficult to see with the background color, the images were stretched and pixelated, and the overall presentation was lacking.
 
+# Pseudocode for tkinter and Pillow Implmentation
+```python
+# Import both tkinter and Pillow modules
+Import tkinter as tk
+From tkinter import *
+From PIL import Image
+From PIL import ImageTk
+
+# Adjusts the window screen and size
+Root = tk.Tk()
+Root.geometry(“800x800)
+
+# Loads the images used for the slideshow
+placeholder = ImageTk.PhotoImage(Image.open(“placeholder.png”))
+placeholderTwo = ImageTk.PhotoImage(Image.open(“placeholder2.png”))
+placeholderThree = ImageTk.PhotoImage(Image.open(“placeholder3.png”))
+placeholderFour = ImageTk.PhotoImage(Image.open(“placeholder4.png”))
+placeholderFive = ImageTk.PhotoImage(Image.open(“placeholder5.png”))
+
+```
 # Enhanced Artifact
 <img width="601" alt="pythonslideshow" src="https://github.com/marcgregor/marcgregor.github.io/assets/120348789/88f463e0-d1e7-4713-968d-961fad8772d9">
 
