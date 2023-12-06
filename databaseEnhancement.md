@@ -19,7 +19,42 @@ With how common and serious SQL injections can be, security was a main focus. Th
 It was a challenge – it was the only artifact that I basically built from the ground-up – so it was the most extensive of the three by far. However, that’s why I found it so enjoyable. I built an entire piece of software from a single screenshot, and felt I was able to showcase my skills far more than the other two, since I was only modifying them. Overall, it went smoothly, as I used an extensive planning stage, allowing me to get a good grasp on what needed to be done before I ever wrote a single line of code. It cannot be stressed enough on just how important a security-first mindset is, especially when it comes to dealing with data. Injections are such a huge problem, so it is paramount to find ways to mitigate them as much as possible – this is where the parameterized queries really come into play.
 
 # Original Artifact
+![image](https://github.com/marcgregor/marcgregor.github.io/assets/120348789/e50620ba-7851-4451-8977-35a974634430)
 
+The main screenshot I based the entire program off of - The table is called Customers, with CustomerID as the primnary key, with name and address information as the rest of the fields. 
 # Pseudocode
+```python
 
+import tkinter
+from tkinter import *
+from tkinter import messagebox, ttk
+
+from db import Database
+db = Database('customers.db')
+
+# Create window object
+app = Tk()
+app.title('Customer Manager')
+app.configure(background='light blue')
+app.geometry('800x500')
+# Prevents window from being resized
+app.resizable(False, False)
+
+```
+Like the slideshow, this program also utilized tkinter. On top of that, it also grabs information from a SQLite database (from another .py file), and then configures the initial set up, such as the background color and preventing the window from being resized.
 # Enhanced Artifact
+![image](https://github.com/marcgregor/marcgregor.github.io/assets/120348789/8991b986-f925-44fb-ab55-8e0285bc5fce)
+
+The new program created from the screenshot. It has a simple UI that's easy to understand, with clear input fields and buttons. On top of that, you can sort the data by clicking on one of the table headings - this will sort it in ascending or descending order based on the field of the column.
+```python
+
+# Function to sort the Treeview by column
+def sort_treeview(tree, col, descending):
+    data = [(tree.set(item, col), item) for item in tree.get_children('')]
+    data.sort(reverse=descending)
+    for index, (val, item) in enumerate(data):
+        tree.move(item, '', index)
+    tree.heading(col, command=lambda: sort_treeview(tree, col, not descending))
+
+```
+This is the method that enables the option to sort by clicking on the header. It grabs the data of the correct column and then sorts it and ascending/descending order (depending on how many times the user clicks the heading). 
