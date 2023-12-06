@@ -2,7 +2,11 @@ theme: jekyll-theme-minimal
 title: Marc Gregor's Culmination of the SNHU Computer Science Program
 
 description: <a href="https://marcgregor.github.io/">Home/Self-Assessment</a>
-description: <a href="https://marcgregor.github.io/codeReview">Code Review</a>
-description: <a href="https://marcgregor.github.io/slideshowEnhancement">Artifact One</a>
-description: <a href="https://marcgregor.github.io/hashTableEnhancement">Artifact Two</a>
-description: <a href="https://marcgregor.github.io/databaseEnhancement">Artifact Three</a>
+
+ <a href="https://marcgregor.github.io/codeReview">Code Review</a>
+
+ <a href="https://marcgregor.github.io/slideshowEnhancement">Artifact One</a>
+
+ <a href="https://marcgregor.github.io/hashTableEnhancement">Artifact Two</a>
+
+ <a href="https://marcgregor.github.io/databaseEnhancement">Artifact Three</a>
